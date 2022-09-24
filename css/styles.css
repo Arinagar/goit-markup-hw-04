@@ -116,6 +116,8 @@ img {
 .tel {
   color: var(--second-color);
   font-weight: 500;
+  display: flex;
+  align-items: center;
 }
 
 .header .current {
@@ -153,7 +155,6 @@ img {
   display: flex;
   gap: 50px;
   margin-left: auto;
-  text-align: center;
 }
 
 .header .container {
@@ -239,6 +240,9 @@ img {
   background-color: var(--first-background-color);
   text-align: center;
   padding: 200px 0;
+  background: url('/images/hero.jpg') rgba(47, 48, 58, 0.4);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero {
