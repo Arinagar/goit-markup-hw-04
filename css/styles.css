@@ -152,7 +152,6 @@ img {
   display: flex;
   gap: 50px;
   margin-left: auto;
-  
 }
 
 .header .container {
@@ -171,6 +170,8 @@ img {
   margin-right: 10px;
   fill: currentColor;
 }
+
+
 
 
 /* HEADER END */
