@@ -367,6 +367,11 @@ img {
 }
 
 
+
+.project-card:hover, .project-card:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 /* ICONS */
 .benefits-icon {
   background-color: var(--second-background-color);
@@ -422,27 +427,21 @@ img {
 .partner-icon {
   fill: currentColor;
 }
-
-
-
-
-
 /* ICONS */
+
 /* BODY END */
 /* FOOTER */
 
 .footer {
   background-color: var(--first-background-color);
   padding: 60px 0;
-  display: flex;
-  align-items: baseline;
 
 }
 
 .footer .logo,
 .mail,
 .tel,
-.coor {
+.coor, .project-card {
   text-decoration: none;
 }
 
@@ -477,6 +476,11 @@ img {
 }
 
 .footer .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer .f-child {
   display: flex;
   flex-direction: column;
   margin-right: 70px;
