@@ -9,6 +9,8 @@
   --third-color: rgba(255, 255, 255, 60%);
   --fourth-color: white;
   --border-color: #ececec;
+  --second-border-color: #AFB1B8;
+  --fourth-background-color: rgba(255, 255, 255, 0.1);
 }
 *,
 *:before,
@@ -25,7 +27,7 @@ body {
 .list,
 .contacts-list,
 .buttons-list,
-.benefits-list {
+.benefits-list, .social-list, .f-social-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -160,7 +162,6 @@ img {
 .header .container {
   display: flex;
   align-items: center;
-  /* justify-content: space-around; */
 }
 
 .page-navigation {
@@ -169,13 +170,11 @@ img {
   gap: 93px;
 }
 /* ICONS */
-.mail-icon, .tel-icon {
+.mail-icon,
+.tel-icon {
   margin-right: 10px;
   fill: currentColor;
 }
-
-
-
 
 /* HEADER END */
 
@@ -358,15 +357,86 @@ img {
 }
 
 .t-child .person-card {
-  padding: 20px 24px;
+  padding: 30px 32px;
   background-color: var(--fourth-color);
 }
-/* BODY END */
+.clients .sec-des {
+  text-align: center;
+  margin-bottom: 50px;
+  padding-top: 0;
+}
 
+
+/* ICONS */
+.benefits-icon {
+  background-color: var(--second-background-color);
+  margin-bottom: 30px;
+  padding: 24px 100px;
+}
+
+.person-card .social-list {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+}
+
+.social-link {
+  color: var(--second-color);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--third-background-color);
+  color: var(--fourth-color);
+}
+
+.social-link-icon {
+  fill: currentColor;
+}
+
+.clients .list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.partner-link {
+  color: var(--second-color);
+  border-radius: 2px;
+  width: 170px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: 1px solid var(--second-border-color);
+}
+
+.partner-link:hover, .partner-link:focus {
+  color: var(--first-color);
+  outline-color: var(--first-color);
+}
+.partner-icon {
+  fill: currentColor;
+}
+
+
+
+
+
+/* ICONS */
+/* BODY END */
 /* FOOTER */
+
 .footer {
   background-color: var(--first-background-color);
   padding: 60px 0;
+  display: flex;
+  align-items: baseline;
+
 }
 
 .footer .logo,
@@ -409,4 +479,43 @@ img {
 .footer .container {
   display: flex;
   flex-direction: column;
+  margin-right: 70px;
 }
+
+.footer .join {
+  padding: 0;
+}
+
+.f-sec-des {
+  text-align: center;
+  color: var(--fourth-color);
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.14;
+  font-size: 14px;
+}
+
+.f-social-list {
+  display: flex;
+  gap: 10px;
+}
+
+.f-social-link {
+  color: var(--fourth-color);
+  background-color: var(--fourth-background-color);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+.f-social-link:hover, .f-social-link:focus {
+  background-color: var(--third-background-color);
+  color: var(--fourth-color);
+}
+
