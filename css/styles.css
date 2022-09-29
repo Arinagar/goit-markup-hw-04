@@ -9,10 +9,10 @@
   --third-color: rgba(255, 255, 255, 60%);
   --fourth-color: white;
   --border-color: #ececec;
-  --second-border-color: #AFB1B8;
+  --second-border-color: #afb1b8;
   --fourth-background-color: rgba(255, 255, 255, 0.1);
   --color-hero: rgba(47, 48, 58, 0.4);
-  --icons-color: #AFB1B8;
+  --icons-color: #afb1b8;
 }
 *,
 *:before,
@@ -25,11 +25,13 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* UTILITIES */
+/* -----------UTILITIES----------- */
 .list,
 .contacts-list,
 .buttons-list,
-.benefits-list, .social-list, .f-social-list {
+.benefits-list,
+.social-list,
+.f-social-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -206,7 +208,8 @@ img {
   border: none;
   cursor: pointer;
   font-family: inherit;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .main .list {
@@ -243,7 +246,8 @@ img {
   text-align: center;
   padding: 200px 0;
   background-size: cover;
-  background: linear-gradient(var(--color-hero), var(--color-hero) ), url("../images/hero.jpg"), no-repeat left top;
+  background: linear-gradient(var(--color-hero), var(--color-hero)), url('../images/hero.jpg'),
+    no-repeat left top;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -375,8 +379,10 @@ img {
   display: block;
 }
 
-.project-card:hover, .project-card:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.project-card:hover,
+.project-card:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /* ICONS */
@@ -387,7 +393,6 @@ img {
   height: 120px;
   background-color: var(--second-background-color);
   margin-bottom: 30px;
-  
 }
 
 .person-card .social-list {
@@ -431,7 +436,8 @@ img {
   outline: 1px solid var(--second-border-color);
 }
 
-.partner-link:hover, .partner-link:focus {
+.partner-link:hover,
+.partner-link:focus {
   color: var(--first-color);
   outline-color: var(--first-color);
 }
@@ -446,13 +452,13 @@ img {
 .footer {
   background-color: var(--first-background-color);
   padding: 60px 0;
-
 }
 
 .footer .logo,
 .mail,
 .tel,
-.coor, .project-card {
+.coor,
+.project-card {
   text-decoration: none;
 }
 
@@ -526,11 +532,11 @@ img {
   height: 44px;
   display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
 }
 
-.f-social-link:hover, .f-social-link:focus {
+.f-social-link:hover,
+.f-social-link:focus {
   background-color: var(--third-background-color);
   color: var(--fourth-color);
 }
-
